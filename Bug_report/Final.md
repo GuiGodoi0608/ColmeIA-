@@ -9,6 +9,7 @@ A aplicação permite que usuários não autenticados consigam acessar diretamen
 executar ações como criação de itens e remoção de itens. 
 
 Steps:
+
     1. Abra uma aba anônima
     2. Acesse:
     https://teste-colmeia-qa.colmeia-corp.com/dashboard/campanha/bancos-de-dados
@@ -36,6 +37,7 @@ Descrição:
 O sistema apresenta comportamento inconsistente ao exibir uma mensagem de erro de login inválido. Clicar no botão de continue permite que o usuário prossiga e acesse a aplicação.
 
 Steps:
+
     1. Abra o site
     2. Insira email: qa@test.com
     3. Insira senha: 123456
@@ -63,6 +65,7 @@ usuários são removidos do banco de dados.
 
 
 Steps:
+
     1. Abra o site
     2. Utilize credenciais válidas
     3. Acessar "Banco de dados"
@@ -87,6 +90,7 @@ Descrição:
 Itens marcados como arquivados desaparecem da lista principal, porém não são exibidos na seção de itens arquivados.
 
 Steps:
+
     1. Abra o site
     2. Utilize credenciais válidas
     3. Vá para ‘’banco de dados’’
@@ -109,6 +113,7 @@ Descrição:
 O botão de recuperação de senha não executa nenhuma ação ao ser clicado pelo usuário.
 
 Steps:
+
     1. Abra o site
     2. Acessar tela de login
     3. Clicar em "Esqueci minha senha"
@@ -128,6 +133,7 @@ Descrição:
 Botão "Candidato" não executa nenhuma ação após o usuário logar em sua conta.
 
 Steps:
+
     1. Fazer login
     2. Clicar em "Candidato"
 
