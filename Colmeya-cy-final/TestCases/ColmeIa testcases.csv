@@ -1,0 +1,15 @@
+ID,Test,Steps ,Pre-Condition,Expected Result,Actual Result,Resultado,Bugs
+,LOGIN PAGE,,,,,,
+TC-LOGIN-001,Verify login with valid credentials,"1. Open the URL
+2. On the main page type the valid information
+3. Click on the continue button
+4. Observe that the main page is visible",User on login page,User should access main page without errors,Error message displayed incorrectly,Failed,Mensagem incorreta ao utilizar credenciais válidas
+TC-LOGIN-002,Verify login with invalid credentials,"1. Open the URL
+2. On the main page type the invalid information
+3. Click on the continue button
+4. Observe that the main page is visible",User on login page,System should block access and show error,System blocks access correctly,Passed,
+TC-LOGIN-003,Verify login with empty fields,"1. Open the URL
+2. Click on continue without adding a username and password",User on login page,System should show validation message,No validation or unexpected behavior,Passed,
+TC-LOGIN-004,Verify forgot password button,"1. Open the URL
+2. Click on the 'forgot your password''
+3. Observe that the 'reset password' screen appears",User on login page,User should be redirected to reset flow,No action occurs,Failed,"Botão ""Esqueci minha senha"" não funciona"
