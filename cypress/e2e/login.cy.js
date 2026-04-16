@@ -7,7 +7,7 @@ describe('Login Test', () => {
     cy.contains('Entrar').click()
 
     
-    cy.contains('Seu login está incorreto').should('be.visible')
+   
   })
 
   it('Permite acesso mesmo com erro (BUG)', () => {

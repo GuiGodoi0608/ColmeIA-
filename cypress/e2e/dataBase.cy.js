@@ -1,7 +1,7 @@
 
 
 describe('DatabaseTest', () => {
-  it('Recarregar a pagina faz com que os itens sumam', () => {
+  beforeEach(() => {
     cy.visit('https://teste-colmeia-qa.colmeia-corp.com/')
 
     cy.get('input[type="email"]').type('qa@test.com')
@@ -10,9 +10,11 @@ describe('DatabaseTest', () => {
 
     cy.contains('Continuar').click()
 
-   
     cy.url().should('include', 'dashboard')
+  })
 
+  
+  it('Recarregar a pagina faz com que os itens sumam', () => {
     cy.get('[routerlink="/dashboard/campanha"]').click()
     cy.contains('Bancos de dados').click()
     cy.contains('Criar').click()
@@ -23,15 +25,9 @@ describe('DatabaseTest', () => {
 
     cy.contains('Teste QA').should('exist')
   })
-
+  
   it('Criar na database sem titulo',() =>{
-    cy.visit('https://teste-colmeia-qa.colmeia-corp.com/')
-    cy.get('input[type="email"]').type('qa@test.com')
-    cy.get('input[type="password"]').type('123456')
-    cy.contains('Entrar').click()
-    cy.contains('Continuar').click()
-
-    cy.url().should('include', 'dashboard')
+    
 
     cy.get('[routerlink="/dashboard/campanha"]').click()
     cy.contains('Bancos de dados').click()
