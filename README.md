@@ -14,12 +14,12 @@ Scope
 
 The following areas were covered during testing:
 
-* Authentication and access control
-* Navigation and user flows
-* Database (CRUD operations)
-* Data persistence
-* UI interactions
-* Basic performance and console analysis
+ Authentication and access control
+ Navigation and user flows
+ Database (CRUD operations)
+ Data persistence
+ UI interactions
+ Basic performance and console analysis
 
 ---
 
@@ -48,9 +48,8 @@ Methodology
 
 Tools Used
 
-* Browser DevTools (Console & Network)
+* Browser DevTools (Console)
 * Google Chrome
-* Opera GX (for cross-browser comparison)
 
 ---
 
@@ -58,17 +57,10 @@ Security Findings
 
 A critical vulnerability was identified:
 
-> Users can access protected routes and perform actions without authentication.
+-Users can access protected routes and perform actions without authentication.
 
-This indicates a failure in backend access control validation.
+This *can* indicate a failure in backend access control validation.
 
----
-
- Observations
-
-* Some inconsistencies suggest lack of proper backend integration
-* Possible absence of data persistence layer
-* Minor frontend implementation issues were also identified
 
 ---
 
@@ -92,7 +84,7 @@ Conclusion
 
 The application presents critical issues in authentication, data persistence, and feature reliability.
 
-From a QA perspective, the system would require fixes in:
+The issue that I found can relate to:
 
 * Access control
 * Backend integration
