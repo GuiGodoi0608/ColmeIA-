@@ -30,7 +30,7 @@ All identified issues are documented here:
 
 ---
 
-## 🧪 Test Cases
+Test Cases
 
 Test cases were created to validate the main system flows and edge cases.
 
