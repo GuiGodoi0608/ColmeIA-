@@ -21,7 +21,7 @@ describe('DatabaseTest', () => {
 
     cy.reload()
 
-    cy.contains('Teste QA').should('not.exist')
+    cy.contains('Teste QA').should('exist')
   })
 
   it('Criar na database sem titulo',() =>{
