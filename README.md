@@ -83,6 +83,7 @@ npx cypress open
 Conclusion
 
 The application presents critical issues in authentication, data persistence, and feature reliability.
+I developed these automated tests to validate the application's core workflows and to document the critical defects identified during exploratory testing. You will notice that some tests fail by design; this is intended to highlight specific system inconsistencies and issues affecting functional integrity.
 
 The issue that I found can relate to:
 
