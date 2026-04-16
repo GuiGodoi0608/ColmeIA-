@@ -5,8 +5,8 @@
 
 Descrição:
 
-Usuários não autenticados conseguem acessar diretamente páginas internas do sistema e
-executar ações como criação de itens.
+A aplicação permite que usuários não autenticados consigam acessar diretamente páginas internas do sistema e
+executar ações como criação de itens e remoção de itens. 
 
 Steps:
     1. Abra uma aba anônima
@@ -15,8 +15,7 @@ Steps:
     3. Tentar criar um novo item
 
 Actual result:
-Usuário não autenticado consegue acessar a página e criar itens normalmente
-
+Usuário não autenticado consegue acessar a página e criar/remover itens
 Expected:
 Usuário deve ser redirecionado para a tela de login e não deve conseguir acessar ou
 manipular dados
@@ -31,9 +30,10 @@ attachment:https://drive.google.com/file/d/1_TCZoEhrA70fTQGWUwvX9Sx8nBSGGIyv/vie
 
 ## BUG 02
     Mensagem incorreta ao utilizar credenciais válidas
+    
 
 Descrição:
-Mesmo quando o usuário utiliza credenciais corretas, uma mensagem de erro aparece.
+O sistema apresenta comportamento inconsistente ao exibir uma mensagem de erro de login inválido. Clicar no botão de continue permite que o usuário prossiga e acesse a aplicação.
 
 Steps:
     1. Abra o site
@@ -70,19 +70,21 @@ Steps:
     5. Atualizar a página
 
 Actual result:
-Item desaparece da lista
+Ao recarregar a página, todos os itens desaparecem da lista.
 
 Expected:
-Item deve permanecer salvo após atualização
+Os itens devem permanecer salvos após atualização.
 
 Repro rate:
 5/5
+Link do attachment: 
+https://drive.google.com/file/d/12Tabun21ps53t-mX8_gz9gXOa-OmKw38/view?usp=drive_link
 
 ## BUG 04
     Itens arquivados não aparecem na seção de arquivados
 
 Descrição:
-Todos os itens que o usuário manda para a aba de “Arquivados” somem.
+Itens marcados como arquivados desaparecem da lista principal, porém não são exibidos na seção de itens arquivados.
 
 Steps:
     1. Abra o site
@@ -93,10 +95,10 @@ Steps:
     6. Acessar "Itens Arquivados"
 
 Actual result:
-Item não aparece na lista de arquivados
+Nenhum item aparece na lista de arquivados
 
- Expected:
-Item deve aparecer corretamente na seção de arquivados
+Expected:
+Os itens devem aparecer corretamente na seção de arquivados
 Repro rate:
 5/5
 
@@ -104,7 +106,7 @@ Repro rate:
     Botão "Esqueci minha senha" não funciona
 
 Descrição:
-Ao ser clicado o botão não executa ação nenhuma
+O botão de recuperação de senha não executa nenhuma ação ao ser clicado pelo usuário.
 
 Steps:
     1. Abra o site
@@ -130,10 +132,10 @@ Steps:
     2. Clicar em "Candidato"
 
 Actual result:
-Nenhuma ação ocorre
+Nenhuma ação ocorre quando o usuário clica no botão "usuario"
 
 Expected:
-Sistema deve redirecionar para área correspondente
+Sistema deveria mostrar um menu de dropdown para o usuario.
 Repro rate:
 5/5
 
