@@ -17,6 +17,7 @@ Steps:
 
 Actual result:
 Usuário não autenticado consegue acessar a página e criar/remover itens
+
 Expected:
 Usuário deve ser redirecionado para a tela de login e não deve conseguir acessar ou
 manipular dados
@@ -147,9 +148,11 @@ Repro rate:
 
 
 ## Observação Geral
+
 Foram identificadas falhas críticas relacionadas a:
-● Controle de acesso (segurança)
-● Persistência de dados
+
+    Controle de acesso (segurança)
+    Persistência de dados
 
 Esses problemas podem indicar uma possível ausência de validação no backend e falhas
 na integração entre frontend e backend.
