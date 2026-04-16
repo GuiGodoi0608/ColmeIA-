@@ -50,7 +50,7 @@ Tools Used
 
 * Browser DevTools (Console)
 * Google Chrome
-
+* Cypress (On vscode)
 ---
 
 Security Findings
